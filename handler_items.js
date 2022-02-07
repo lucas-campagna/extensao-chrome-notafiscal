@@ -14,6 +14,7 @@ function coletar_itens(args) {
             codigo: e.querySelector(".RCod").innerText.match(/\d+/g)[0],
             quantidade: e.querySelector(".Rqtd").innerText.match(/\d+((,|\.)\d+)?/g)[0],
             unidade: e.querySelector(".RUN").innerText.replace(/\s*UN:\s*/, ''),
+            // TODO: passar ponto para virgula
             valor_unitario: e.querySelector(".RvlUnit").innerText.match(/\d+((,|\.)\d+)?/g)[0],
             valor_total: e.querySelector(".txtTit.noWrap").innerText.match(/\d+((,|\.)\d+)?/g)[0],
             nota_chave,
